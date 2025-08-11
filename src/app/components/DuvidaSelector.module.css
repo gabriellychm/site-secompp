@@ -1,0 +1,14 @@
+.radio{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.radio + label{
+    cursor: pointer;
+}
+
+.radio:checked + label {
+    padding: 5px;
+    background-color: #555555;
+    border-radius: 6px;
+}
