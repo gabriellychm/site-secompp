@@ -13,9 +13,9 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Força cores do modo claro */
+  html {
+    color-scheme: light;
   }
 }
 
