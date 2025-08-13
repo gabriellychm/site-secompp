@@ -8,7 +8,9 @@
 }
 
 .radio:checked + label {
-    padding: 5px;
-    background-color: #555555;
-    border-radius: 6px;
+    color: white;
+    width: fit-content;
+    padding: .5rem;
+    background-color: #000000B2;
+    border-radius: 12px;
 }
