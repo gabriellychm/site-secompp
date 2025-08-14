@@ -11,8 +11,6 @@ interface MinicursoCardProps {
   contato?: string;
 }
 
-// A small helper component to keep the code clean and avoid repetition.
-// It creates a single row for a piece of information (e.g., "Horário: 10:00").
 const InfoRow: React.FC<{ label: string; value?: string }> = ({
   label,
   value,
@@ -28,8 +26,6 @@ const InfoRow: React.FC<{ label: string; value?: string }> = ({
   </div>
 );
 
-// The main card component.
-// It accepts all the course information as props.
 const MinicursoCard: React.FC<MinicursoCardProps> = ({
   title,
   horario,
@@ -41,7 +37,7 @@ const MinicursoCard: React.FC<MinicursoCardProps> = ({
   contato,
 }) => {
   return (
-    <div className="bg-gray-900/80 backdrop-blur-sm rounded-2xl p-6 w-96 h-auto flex flex-col shadow-lg">
+    <div className="bg-black/75 backdrop-blur-sm rounded-2xl p-6 w-110 h-124 flex flex-col shadow-lg ml-15">
       <div className="text-center mb-6">
         <h2 className="text-yellow-400 text-2xl font-bold uppercase inline-block border-b-4 border-yellow-400 pb-1">
           {title || "TÍTULO DO CURSO"}

@@ -12,7 +12,7 @@ export default function MinicursoHeader({
 }: MinicursoHeaderProps) {
   return (
     <header>
-      <div className="w-full bg-[#0e1526] text-white p-8 flex justify-between items-center">
+      <div className="w-screen bg-[#0e1526] text-white p-12 flex justify-between items-center">
         <div className="flex flex-col">
           <svg
             xmlns="http://www.w3.org/2000/svg"
