@@ -1,6 +1,5 @@
 import router from "next/router";
 
-// src/app/components/minicurso/MinicursoHeader.tsx
 interface MinicursoHeaderProps {
   readonly dayOfWeek: string;
   readonly pageTitle: string;
@@ -12,15 +11,20 @@ export default function MinicursoHeader({
 }: MinicursoHeaderProps) {
   return (
     <header>
-      <div className="w-screen bg-[#0e1526] text-white p-12 flex justify-between items-center">
-        <div className="flex flex-col">
+      <div
+        className="w-full bg-[#0e1226] text-white
+        p-6 md:p-12
+        flex items-center justify-between
+      "
+      >
+        <div className="flex items-center gap-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="w-8 h-8 cursor-pointer hover:opacity-75 transition-opacity"
+            className="w-7 h-7 sm:w-8 sm:h-8 cursor-pointer hover:opacity-75 transition-opacity flex-shrink-0"
             onClick={() => router.back()}
           >
             <path
@@ -29,16 +33,17 @@ export default function MinicursoHeader({
               d="M15.75 19.5L8.25 12l7.5-7.5"
             />
           </svg>
-          <div className="flex flex-col mt-2 ml-15">
-            <span className="text-3xl semi-bold tracking-wider uppercase">
+
+          <div className="flex flex-col">
+            <span className="text-2xl sm:text-3xl font-semibold tracking-wider uppercase">
               {dayOfWeek}
             </span>
             <div className="h-1 w-full bg-yellow-500 mt-1 rounded"></div>
           </div>
         </div>
 
-        <div>
-          <span className="text-4xl extrabold tracking-widest">
+        <div className="hidden sm:block">
+          <span className="text-3xl sm:text-4xl font-extrabold tracking-widest">
             {pageTitle}
           </span>
         </div>

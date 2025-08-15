@@ -9,17 +9,17 @@ interface MinicursoCardProps {
   descricao?: string;
   material?: string;
   contato?: string;
+  number: number;
 }
 
+// O InfoRow pode se beneficiar de fontes responsivas também
 const InfoRow: React.FC<{ label: string; value?: string }> = ({
   label,
   value,
 }) => (
-  <div className="flex items-start text-base">
-    {/* Label (e.g., "Horário:") */}
+  // ADICIONADO: texto menor em telas pequenas, base em telas maiores
+  <div className="flex items-start text-sm sm:text-base">
     <p className="font-bold text-white w-2/5 flex-shrink-0">{label}</p>
-
-    {/* Value (e.g., "10:00" or the placeholder) */}
     <p className="font-light text-white w-3/5">
       {value || "---------------------"}
     </p>
@@ -37,20 +37,30 @@ const MinicursoCard: React.FC<MinicursoCardProps> = ({
   contato,
 }) => {
   return (
-    <div className="bg-black/75 backdrop-blur-sm rounded-2xl p-6 w-110 h-124 flex flex-col shadow-lg ml-15">
-      <div className="text-center mb-6">
-        <h2 className="text-yellow-400 text-2xl font-bold uppercase inline-block border-b-4 border-yellow-400 pb-1">
+    // ALTERAÇÕES PRINCIPAIS AQUI
+    <div
+      className="bg-black/75 backdrop-blur-sm rounded-2xl flex flex-col shadow-lg
+      p-4 sm:p-6   
+      w-full     
+      h-auto       
+      min-h-[28rem] sm:min-h-[32rem]
+      max-w-[28rem]
+      mx-auto
+    "
+    >
+      <div className="text-center mb-4 sm:mb-6">
+        <h2 className="text-yellow-400 text-xl sm:text-2xl font-bold uppercase inline-block border-b-4 border-yellow-400 pb-1">
           {title || "TÍTULO DO CURSO"}
         </h2>
       </div>
 
-      <div className="flex flex-col space-y-3">
+      <div className="flex flex-col space-y-2 sm:space-y-3">
         <InfoRow label="Horário:" value={horario} />
         <InfoRow label="Ministrante:" value={ministrante} />
         <InfoRow label="Local:" value={local} />
         <InfoRow label="Pré-requisito:" value={preRequisito} />
 
-        <div className="flex items-start text-base">
+        <div className="flex items-start text-sm sm:text-base">
           <p className="font-bold text-white w-2/5 flex-shrink-0">Descrição:</p>
           <p className="font-light text-white w-3/5 whitespace-pre-wrap">
             {descricao || "---------------------"}
