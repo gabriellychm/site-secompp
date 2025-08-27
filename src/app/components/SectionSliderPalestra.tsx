@@ -41,6 +41,7 @@ export default function SectionSliderPalestra() {
                 style={{
                     "--swiper-navigation-color": "#FFB300",
                     "--swiper-pagination-color": "#FFB300",
+                    "--swiper-pagination-bullet-inactive-color": "#fff",
                     "--swiper-pagination-bottom": "0px",
                 } as React.CSSProperties}
                 breakpoints={{
