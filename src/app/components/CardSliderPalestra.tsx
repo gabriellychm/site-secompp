@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 
-export default function CardSliderPalestra(props) {
+export default function CardSliderPalestra(props: any) {
     return (
     <div className="h-full">
         <div className="bg-[#FFB300] text-center flex justify-center items-center rounded-t-4xl h-1/6">

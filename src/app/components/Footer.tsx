@@ -8,17 +8,17 @@ export default function Footer() {
                         <div className="flex items-center gap-3">
                             <div className="p-5 bg-gray-500 rounded-full">
                             </div>
-                            <p>@Patrocinador</p>
+                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="">@Patrocinador</a>
                         </div>
                         <div className="flex items-center gap-3">
                             <div className="p-5 bg-gray-500 rounded-full">
                             </div>
-                            <p>@Patrocinador</p>
+                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="">@Patrocinador</a>
                         </div>
                         <div className="flex items-center gap-3">
                             <div className="p-5 bg-gray-500 rounded-full">
                             </div>
-                            <p>@Patrocinador</p>
+                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="">@Patrocinador</a>
                         </div>
                     </div>
                 </div>
@@ -28,17 +28,17 @@ export default function Footer() {
                         <div className="flex items-center gap-3">
                             <div className="p-5 bg-gray-500 rounded-full">
                             </div>
-                            <p>@Patrocinador</p>
+                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="">@Patrocinador</a>
                         </div>
                         <div className="flex items-center gap-3">
                             <div className="p-5 bg-gray-500 rounded-full">
                             </div>
-                            <p>@Patrocinador</p>
+                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="">@Patrocinador</a>
                         </div>
                         <div className="flex items-center gap-3">
                             <div className="p-5 bg-gray-500 rounded-full">
                             </div>
-                            <p>@Patrocinador</p>
+                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="">@Patrocinador</a>
                         </div>
                     </div>
                 </div>
@@ -48,17 +48,17 @@ export default function Footer() {
                         <div className="flex items-center gap-3">
                             <div className="p-5 bg-gray-500 rounded-full">
                             </div>
-                            <p>@Patrocinador</p>
+                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="">@Patrocinador</a>
                         </div>
                         <div className="flex items-center gap-3">
                             <div className="p-5 bg-gray-500 rounded-full">
                             </div>
-                            <p>@Patrocinador </p>
+                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="">@Patrocinador</a>
                         </div>
                         <div className="flex items-center gap-3">
                             <div className="p-5 bg-gray-500 rounded-full">
                             </div>
-                            <p>@Patrocinador</p>
+                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="">@Patrocinador</a>
                         </div>
                     </div>
 
@@ -70,17 +70,17 @@ export default function Footer() {
                     <div className="flex items-center gap-3 text-white">
                         <div className="p-3 bg-gray-500 rounded-full">
                         </div>
-                        <p>@computacao.fct</p>
+                        <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="https://www.instagram.com/computacao.fct/">@computacao.fct</a>
                     </div>
                     <div className="flex items-center gap-3 text-white">
                         <div className="p-3 bg-gray-500 rounded-full">
                         </div>
-                        <p>@ejcomp</p>
+                        <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="https://www.instagram.com/ejcompunesp/">@ejcomp</a>
                     </div>
                     <div className="flex items-center gap-3 text-white">
                         <div className="p-3 bg-gray-500 rounded-full">
                         </div>
-                        <p>@cacic</p>
+                        <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="https://www.instagram.com/cacic.fct/">@cacic.fct</a>
                     </div>
                 </div>
                 <div>

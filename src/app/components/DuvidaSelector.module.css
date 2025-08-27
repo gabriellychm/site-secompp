@@ -5,6 +5,13 @@
 
 .radio + label{
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: fit-content;
+    border-radius: 5px;
+}
+.radio:hover + label{
+    cursor: pointer;
+    background-color: rgba(255, 216, 123, 0.37);
 }
 
 .radio:checked + label {
