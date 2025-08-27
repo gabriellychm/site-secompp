@@ -1,0 +1,151 @@
+
+
+.container {
+    background-color: #0E1526;
+    padding: 25px;
+    font-family: var(--font-poppins), sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5px;
+}
+
+.logoSection {
+    display:flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logoCircle {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 9999px;
+}
+
+.siteName {
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+}
+
+.navMenu {
+    display: flex;
+    gap: 40px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.navMenu a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navMenu a:hover {
+  color: #FFB300; 
+}
+
+.btnMenu {
+  display: flex;
+  gap: 5px;
+}
+
+.mainCenter {
+  text-align: center;
+  margin-bottom: 4rem; /* mb-16 */
+}
+
+.mainName {
+  font-size: 85px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.mainNameLetters {
+  color: white;
+}
+
+.mainNameNumbers {
+  color: #FFB300;
+}
+
+.subCenter {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: center;
+}
+
+
+.dateContainer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.btnInscreva {
+  background-color: #F59E0B; /* yellow-500 */
+  color: white;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 50px; /* rounded */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.125rem;
+  margin-top: 40px;
+  width: 300px;
+  height: 50px;
+}
+
+.bottomText {
+  font-size: 20px;
+  color: white;
+  width: 85%;
+}
+
+.bottomTitulo {
+  display: flex;
+}
+
+.bottomSection {
+  display: flex;
+}
+
+.line {
+    width: 700px;       /* largura desejada */
+    height: 2px;        /* altura da linha */
+    background-color: #D9D9D9;  /* cor da linha */
+    margin-top: 16px;   /* espaço entre o texto e a linha */
+}
+
+.btnLocalDoEvento {
+  background-color: #2C2F3A;
+  color:#D9D9D9;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 40px;
+  width: 400px;
+  height: 70px;
+}
+
+.btnLocalDoEvento:hover {
+  background-color: #FFB300;
+}
