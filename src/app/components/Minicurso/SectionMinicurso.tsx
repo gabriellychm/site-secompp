@@ -11,7 +11,6 @@ import "swiper/css/navigation";
 import MinicursoHeader from "./MinicursoHeader";
 import MinicursoCard from "./MinicursoCard";
 
-// Dados dos cursos (sem alteração)
 const courses = [
   {
     title: "Minicurso de React",
@@ -50,27 +49,18 @@ export default function SectionMinicurso() {
 
   return (
     <div className="bg-[#d9d9d9] min-h-screen w-full flex flex-col relative overflow-x-hidden">
-      <MinicursoHeader dayOfWeek={"Quarta-Feira"} pageTitle={"Minicursos"} />
-
-      {/* Container Principal:
-        - Mobile (padrão): flex-col (empilha verticalmente), centralizado, com padding pequeno.
-        - Desktop (lg:): flex-row (layout lado a lado), justifica entre as extremidades, com padding maior.
-      */}
+      <MinicursoHeader
+        dayOfWeek="Quinta-feira"
+        pageTitle="MINICURSOS"
+        // bgColor="#fcfcff"
+        // textColor="#0e1526"
+      />
       <div className="flex-1 flex flex-col lg:flex-row items-center justify-center lg:justify-between p-4 md:p-10 relative">
         <div className="absolute inset-0 flex items-center justify-center z-0">
-          {/* Texto de Fundo:
-            - Mobile (padrão): Tamanho de fonte menor (text-6xl).
-            - Desktop (lg:): Tamanho de fonte maior.
-          */}
           <h1 className="text-6xl sm:text-8xl lg:text-[180px] font-black text-black/10 select-none text-center break-words">
-            IMAGEM DO MINICURSO
+            Imagem das palestras
           </h1>
         </div>
-
-        {/* Wrapper do Swiper Principal:
-          - Mobile (padrão): Ocupa toda a largura, mas com um max-w para não ficar gigante em tablets.
-          - Desktop (lg:): Largura fixa de 5/12 e sem max-w.
-        */}
         <div className="w-full max-w-md lg:max-w-none lg:w-5/12 z-10">
           <Swiper
             modules={[Navigation, A11y, Controller]}
@@ -91,11 +81,6 @@ export default function SectionMinicurso() {
             ))}
           </Swiper>
         </div>
-
-        {/* Wrapper da Navegação e Miniaturas:
-          - Mobile (padrão): Fica no fluxo normal do documento, com margem superior (mt-8), empilhado verticalmente mas vira linha em telas pequenas (sm:flex-row).
-          - Desktop (lg:): Volta a ser posicionado absolutamente no canto inferior direito.
-        */}
         <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-6 mt-8 lg:mt-0 lg:w-auto lg:absolute lg:bottom-10 lg:right-10 z-10">
           <div className="flex items-center space-x-4">
             <button className="custom-prev text-black p-2 rounded-full hover:bg-black/20 transition-colors">
@@ -106,17 +91,14 @@ export default function SectionMinicurso() {
             </button>
           </div>
 
-          {/* Wrapper do Swiper de Miniaturas:
-            - Mobile (padrão): Largura total em telas muito pequenas, com max-w.
-            - Telas pequenas (sm:): Largura fixa de w-80.
-          */}
-          <div className="w-full max-w-xs sm:max-w-none sm:w-80">
+          <div className="w-full max-w-xs sm:max-w-none sm:w-[25rem]">
+            {" "}
             <Swiper
               modules={[Controller, A11y]}
               controller={{ control: mainSwiper }}
               onSwiper={setThumbsSwiper}
               slidesPerView={2}
-              spaceBetween={20}
+              spaceBetween={10}
               loop={true}
               watchSlidesProgress={true}
               slideToClickedSlide={true}
@@ -127,7 +109,7 @@ export default function SectionMinicurso() {
                   key={index}
                   className="opacity-50 transition-opacity"
                 >
-                  <div className="bg-gray-500/50 rounded-lg h-40 w-full flex items-center justify-center">
+                  <div className="bg-gray-500/50 rounded-lg flex flex-col items-center justify-center w-full max-w-70 h-40 mx-auto sm:h-56 lg:h-[17.5rem]">
                     <span className="font-bold text-white text-sm text-center">
                       IMAGEM DO MINICURSO
                     </span>
