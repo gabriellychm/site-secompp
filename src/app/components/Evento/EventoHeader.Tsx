@@ -1,18 +1,21 @@
-import router from "next/router";
+// src/app/components/Evento/EventoHeader.tsx
+"use client"; // Precisa ser um client component por causa do onClick
+import { useRouter } from "next/navigation"; // Importe de next/navigation no App Router
 
-interface MinicursoHeaderProps {
+interface EventoHeaderProps {
   readonly dayOfWeek: string;
   readonly pageTitle: string;
   readonly bgColor?: string;
   readonly textColor?: string;
 }
 
-export default function MinicursoHeader({
+export default function EventoHeader({
   dayOfWeek,
   pageTitle,
   bgColor,
   textColor,
-}: MinicursoHeaderProps) {
+}: EventoHeaderProps) {
+  const router = useRouter(); // hook do App Router
   const headerColor = bgColor ?? "#0e1226";
   const headerTextColor = textColor ?? "#FFFFFF";
 

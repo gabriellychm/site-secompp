@@ -1,5 +1,8 @@
-// SectionMinicurso.tsx
-import { useState } from "react";
+// src/app/components/Evento/SectionEvento.tsx
+"use client"; // Precisa ser client component por causa dos hooks e do Swiper
+
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, A11y, Controller } from "swiper/modules";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
@@ -8,57 +11,58 @@ import type { Swiper as SwiperCore } from "swiper/types";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import MinicursoHeader from "./MinicursoHeader";
-import MinicursoCard from "./MinicursoCard";
+import EventoHeader from "./EventoHeader";
+import EventoCard from "./EventoCard";
+import { Evento } from "@/data/events";
 
-const courses = [
-  {
-    title: "Minicurso de React",
-    horario: "14:00 - 18:00",
-    ministrante: "João da Silva",
-    local: "Laboratório 5",
-    preRequisito: "Conhecimentos básicos de HTML e JavaScript.",
-    descricao:
-      "Aprenda os fundamentos de React e crie sua primeira aplicação interativa do zero.",
-    material: "Notebook com Node.js instalado.",
-    contato: "joao.silva@email.com",
-  },
-  {
-    title: "Introdução a Python para Ciência de Dados",
-    horario: "8:00 - 12:00",
-    ministrante: "Bruno Augusto Furquim, e Julio Santana",
-    local: "Laboratório 5",
-    descricao:
-      "Aprenda os fundamentos de Python e os utilize para análise de dados e visualização.",
-    material: "Notebook com Node.js instalado.",
-    contato: "bruno.furquim@unesp.br, julio.santana@unesp.br",
-  },
-  { title: "Minicurso sem Infos" },
-  {
-    title: "Design de UI/UX com Figma",
-    horario: "19:00 - 22:00",
-    ministrante: "Ana Pereira",
-    local: "Online",
-    descricao: "Crie interfaces incríveis e protótipos interativos com Figma.",
-  },
-];
+interface SectionEventoProps {
+  pageTitle: "MINICURSOS" | "PALESTRAS";
+  dayOfWeek: string;
+  eventos: Evento[];
+  // Cores para diferenciar as seções
+  headerBgColor: string;
+  headerTextColor: string;
+  bgColor: string;
+}
 
-export default function SectionMinicurso() {
+export default function SectionEvento({
+  pageTitle,
+  dayOfWeek,
+  eventos,
+  headerBgColor,
+  headerTextColor,
+  bgColor,
+}: SectionEventoProps) {
   const [mainSwiper, setMainSwiper] = useState<SwiperCore | null>(null);
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperCore | null>(null);
+  const searchParams = useSearchParams();
+
+  // Efeito para ir para o slide correto quando a página carrega
+  useEffect(() => {
+    const initialSlideId = searchParams.get("id");
+    if (initialSlideId && mainSwiper) {
+      const slideIndex = parseInt(initialSlideId, 10);
+      if (!isNaN(slideIndex) && slideIndex < eventos.length) {
+        mainSwiper.slideToLoop(slideIndex); // slideToLoop para funcionar com o loop
+      }
+    }
+  }, [mainSwiper, searchParams, eventos.length]);
 
   return (
-    <div className="bg-[#d9d9d9] min-h-screen w-full flex flex-col relative overflow-x-hidden">
-      <MinicursoHeader
-        dayOfWeek="Quinta-feira"
-        pageTitle="MINICURSOS"
-        // bgColor="#fcfcff"
-        // textColor="#0e1526"
+    <div
+      className={`min-h-screen w-full flex flex-col relative overflow-x-hidden`}
+      style={{ backgroundColor: bgColor }}
+    >
+      <EventoHeader
+        dayOfWeek={dayOfWeek}
+        pageTitle={pageTitle}
+        bgColor={headerBgColor}
+        textColor={headerTextColor}
       />
       <div className="flex-1 flex flex-col lg:flex-row items-center justify-center lg:justify-between p-4 md:p-10 relative">
         <div className="absolute inset-0 flex items-center justify-center z-0">
           <h1 className="text-6xl sm:text-8xl lg:text-[180px] font-black text-black/10 select-none text-center break-words">
-            Imagem das palestras
+            {pageTitle}
           </h1>
         </div>
         <div className="w-full max-w-md lg:max-w-none lg:w-5/12 z-10">
@@ -74,9 +78,9 @@ export default function SectionMinicurso() {
               nextEl: ".custom-next",
             }}
           >
-            {courses.map((curso, index) => (
+            {eventos.map((evento, index) => (
               <SwiperSlide key={index} className="flex justify-center">
-                <MinicursoCard {...curso} number={index + 1} />
+                <EventoCard {...evento} />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -92,7 +96,6 @@ export default function SectionMinicurso() {
           </div>
 
           <div className="w-full max-w-xs sm:max-w-none sm:w-[25rem]">
-            {" "}
             <Swiper
               modules={[Controller, A11y]}
               controller={{ control: mainSwiper }}
@@ -104,14 +107,14 @@ export default function SectionMinicurso() {
               slideToClickedSlide={true}
               className="thumbs-swiper"
             >
-              {courses.map((curso, index) => (
+              {eventos.map((evento, index) => (
                 <SwiperSlide
                   key={index}
                   className="opacity-50 transition-opacity"
                 >
                   <div className="bg-gray-500/50 rounded-lg flex flex-col items-center justify-center w-full max-w-70 h-40 mx-auto sm:h-56 lg:h-[17.5rem]">
                     <span className="font-bold text-white text-sm text-center">
-                      IMAGEM DO MINICURSO
+                      IMAGEM DO {pageTitle.slice(0, -1)}
                     </span>
                   </div>
                 </SwiperSlide>

@@ -1,15 +1,9 @@
+// src/app/components/Evento/EventoCard.tsx
 import React from "react";
+import { Evento } from "@/data/events"; // Importe nossa interface
 
-interface MinicursoCardProps {
-  title: string;
-  horario?: string;
-  ministrante?: string;
-  local?: string;
-  preRequisito?: string;
-  descricao?: string;
-  material?: string;
-  contato?: string;
-  number: number;
+interface EventoCardProps extends Evento {
+  // Recebe todas as propriedades do Evento
 }
 
 const InfoRow: React.FC<{ label: string; value?: string }> = ({
@@ -24,7 +18,7 @@ const InfoRow: React.FC<{ label: string; value?: string }> = ({
   </div>
 );
 
-const MinicursoCard: React.FC<MinicursoCardProps> = ({
+const EventoCard: React.FC<EventoCardProps> = ({
   title,
   horario,
   ministrante,
@@ -37,17 +31,11 @@ const MinicursoCard: React.FC<MinicursoCardProps> = ({
   return (
     <div
       className="bg-black/75 backdrop-blur-sm rounded-2xl flex flex-col shadow-lg
-      p-4 sm:p-6   
-      w-full     
-      h-auto       
-      min-h-[40.625] sm:min-h-[40.625rem]
-      max-w-[36rem]
-      mx-auto
-    "
+      p-4 sm:p-6 w-full h-auto min-h-[40.625rem] max-w-[36rem] mx-auto"
     >
       <div className="text-center mb-4 sm:mb-6">
         <h2 className="text-yellow-400 text-xl sm:text-2xl font-bold uppercase inline-block border-b-4 border-yellow-400 pb-1">
-          {title || "TÍTULO DO CURSO"}
+          {title || "TÍTULO DO EVENTO"}
         </h2>
       </div>
 
@@ -73,4 +61,4 @@ const MinicursoCard: React.FC<MinicursoCardProps> = ({
   );
 };
 
-export default MinicursoCard;
+export default EventoCard;
