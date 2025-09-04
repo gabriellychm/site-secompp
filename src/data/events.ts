@@ -81,4 +81,5 @@ export const palestras: Evento[] = [
     contato: "carlos.vieira@email.com",
     imagemUrl: "/images/palestras/seguranca.png",
   },
+
 ];

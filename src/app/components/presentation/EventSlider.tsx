@@ -31,36 +31,42 @@ export default function EventSlider({
 
   return (
     <div className={sectionClasses}>
-      <div className="text-center mb-10">
-        <h2 className={`text-4xl font-bold uppercase ${textClasses}`}>
-          {title}
-        </h2>
+      <div className="text-center grid grid-cols-3 justify-items-end w-full mb-5">
+        <div className={"flex flex-col justify-center items-center"}>
+            <h2 className={`text-4xl w-fit font-bold uppercase border-b-4 border-[#FFB300]  ${textClasses}`}>
+                Programação
+            </h2>
+            <div className={"flex justify-start w-full"}>
+                <h2 className={`text-3xl ${textClasses}`}>
+                    {title}
+                </h2>
+            </div>
+        </div>
+          <div></div>
+          <div></div>
       </div>
 
-      <Swiper
-        modules={[Navigation, Pagination, A11y]}
-        spaceBetween={50}
-        slidesPerView={3}
-        initialSlide={3}
-        centeredSlides
-        loop={true}
-        navigation
-        pagination={{ clickable: true }}
-        className="w-[80%] h-90"
-        style={
-          {
-            "--swiper-navigation-color": swiperNavColor,
-            "--swiper-pagination-color": swiperPagiColor,
-            "--swiper-pagination-bullet-inactive-color": "#fff",
-            "--swiper-pagination-bottom": "0px",
-          } as React.CSSProperties
-        }
-        breakpoints={{
-          320: { slidesPerView: 1, spaceBetween: 20 },
-          640: { slidesPerView: 2, spaceBetween: 30 },
-          1024: { slidesPerView: 3, spaceBetween: 50 },
-        }}
-      >
+        <Swiper
+            modules={[Navigation, Pagination, A11y]}
+            spaceBetween={20} // diminui o espaço
+            slidesPerView={3}
+            centeredSlides={false} // evita centralizar e "espremer"
+            navigation
+            pagination={{ clickable: true }}
+            loop={true} // só loopa se tiver mais que 3
+            className="w-full max-w-6xl h-90" // ocupa mais largura no desktop
+            style={{
+                "--swiper-navigation-color": "#FFB300",
+                "--swiper-pagination-color": "#0E1526",
+                "--swiper-pagination-bottom": "0px",
+            } as React.CSSProperties}
+            breakpoints={{
+                320: { slidesPerView: 1, spaceBetween: 10 },
+                640: { slidesPerView: 2, spaceBetween: 20 },
+                1024: { slidesPerView: 3, spaceBetween: 30 },
+            }}
+        >
+
         {eventos.map((evento, index) => (
           <SwiperSlide key={index} className="self-stretch">
             <Link href={`/${eventType}?id=${index}`} className="h-full block">
