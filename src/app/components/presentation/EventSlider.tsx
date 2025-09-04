@@ -41,8 +41,9 @@ export default function EventSlider({
         modules={[Navigation, Pagination, A11y]}
         spaceBetween={50}
         slidesPerView={3}
+        initialSlide={3}
         centeredSlides
-        loop
+        loop={true}
         navigation
         pagination={{ clickable: true }}
         className="w-[80%] h-90"

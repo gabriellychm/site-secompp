@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function duvidaSelector() {
         const [selected, setSelected] = useState<string>("certificado")
     return (
-        <div className="flex flex-row flex-wrap md:flex-col text-xl font-bold gap-2 justify-center">
+        <div id= "duvidas" className="flex flex-row flex-wrap md:flex-col text-xl font-bold gap-2 justify-center">
             <input
                 type="radio"
                 name="Duvidas"
@@ -55,15 +55,6 @@ export default function duvidaSelector() {
             />
             <label className="h-fit" htmlFor="pagamento">PAGAMENTO</label>
 
-            <input
-                type="radio"
-                name="Duvidas"
-                id="cafe"
-                className={styles.radio}
-                checked={selected === "cafe"}
-                onChange={() => setSelected("cafe")}
-            />
-            <label className="h-fit" htmlFor="cafe">CAFÉ/ALMOÇO</label>
         </div>
     )
 }
