@@ -98,3 +98,4 @@ export default function SectionSliderPalestra() {
         </div>
     );
 }
+//mudança pra ver se o carrossel funciona

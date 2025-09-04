@@ -95,3 +95,4 @@ export default function SectionSliderMinicursos() {
         </div>
     );
 }
+//mudança pra ver se o carrossel funciona
