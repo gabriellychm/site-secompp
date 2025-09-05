@@ -1,8 +1,12 @@
 'use client'
-import styles from './DuvidaSelector.module.css'
-import { useState } from "react";
-export default function duvidaSelector() {
-        const [selected, setSelected] = useState<string>("certificado")
+import styles from './DuvidaSelector.module.css';
+
+type Props = {
+  selected: string;
+  setSelected: (value: string) => void;
+};
+
+export default function DuvidaSelector({ selected, setSelected }: Props) {
     return (
         <div id= "duvidas" className="flex flex-row flex-wrap md:flex-col text-xl font-bold gap-2 justify-center">
             <input

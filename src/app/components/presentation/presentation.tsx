@@ -41,12 +41,6 @@ export default function Presentation() {
                         >
                             Programação
                         </ScrollLink>
-                        <Image
-                            src="/arrow.svg"
-                            alt="seta para baixo"
-                            width={10}
-                            height={10}
-                        />
                     </button>
                     <button className={styles.btnMenu}>
                         <ScrollLink

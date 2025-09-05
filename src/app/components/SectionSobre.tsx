@@ -2,7 +2,7 @@ import Image from 'next/image'
 import SaibaMaisBtnBlack from "@/app/components/SaibaMaisBtnBlack";
 export default function SectionSobre(){
     return(
-        <div id= "sobre" className="p-10 grid md:grid-cols-2 sm:grid-rows-2 md:grid-rows-1">
+        <div id= "sobre" className="p-10 grid md:grid-cols-2 sm:grid-rows-2 md:grid-rows-1 ">
             <div className="flex md:items-start items-center justify-center md:justify-start">
                 <Image className={""} src='/SA03.jpg' alt="UNESP" width={200} height={100}/>
             </div>

@@ -31,7 +31,7 @@ export default function EventSlider({
 
   return (
     <div className={sectionClasses}>
-      <div className="text-center grid md:grid-cols-3 md:justify-items-end justify-items-center w-full mb-5">
+      <div id="programacao" className="text-center grid md:grid-cols-3 md:justify-items-end justify-items-center w-full mb-5">
         <div className={"flex flex-col justify-center items-center"}>
             <h2 className={`text-4xl w-fit font-bold uppercase border-b-4 border-[#FFB300] ${textClasses}`}>
                 Programação
