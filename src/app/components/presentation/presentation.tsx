@@ -92,7 +92,7 @@ export default function Presentation() {
                                 <p style={{ color: "#FFB300", fontSize: "50px" }}>?</p>
                             </div>
                         </div>
-                        <p style={{ fontSize: "18px" }}>
+                        <p>
                             A SECOMPP (Semana da Computação de Presidente Prudente) é um evento anual promovido pelo curso de Ciência da Computação da FCT Unesp.
                             O evento tem como objetivo proporcionar aos estudantes, profissionais e entusiastas da área de computação uma oportunidade de aprendizado, networking e atualização sobre as últimas tendências e avanços tecnológicos.
                             Durante a SECOMPP, são realizadas palestras, mesa-redonda e minicursos.
@@ -111,6 +111,7 @@ export default function Presentation() {
                         alt="esferas com números binários"
                         width={1800}
                         height={1800}
+                        className={styles.spheres}
                     />
                 </div>
             </div>

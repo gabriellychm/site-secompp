@@ -34,7 +34,7 @@
 
 .navMenu {
     display: flex;
-    gap: 40px;
+    gap: 3rem;
     font-weight: 500;
     font-size: 20px;
 }
@@ -155,10 +155,11 @@
 
 .bottomSection {
   display: flex;
+    justify-content: center;
 }
 
 .line {
-    width: 700px;       /* largura desejada */
+    width: 100%;       /* largura desejada */
     height: 2px;        /* altura da linha */
     background-color: #D9D9D9;  /* cor da linha */
     margin-top: 16px;   /* espaço entre o texto e a linha */
@@ -173,7 +174,7 @@
   font-size: 16px;
   font-weight: bold;
   margin-top: 40px;
-  width: 400px;
+  width: 90%;
   height: 70px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -181,4 +182,38 @@
 
 .btnLocalDoEvento:hover {
   background-color: #FFB300;
+}
+
+@media (max-width: 800px) {
+    .bottomRight {
+        display: none;
+    }
+
+    .bottomText, .bottomTitulo, .bottomLeft {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .header{
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .mainName{
+        font-size: 50px;
+        margin: 1rem;
+    }
+    .btnInscreva{
+        width: 90%;
+    }
+}
+
+@media (max-width: 450px) {
+    .navMenu{
+        gap: 1rem;
+        font-size: small;
+    }
 }
