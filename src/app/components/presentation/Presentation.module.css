@@ -99,6 +99,7 @@
   flex-direction: row;
   justify-content: center;
   margin-top: 80px;
+    margin: 2rem;
 }
 
 .mainNameLetters {

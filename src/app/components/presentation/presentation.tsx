@@ -59,8 +59,7 @@ export default function Presentation() {
 
             <div className={styles.mainCenter}>
                 <div className={styles.mainName}>
-                    <p className={styles.mainNameLetters}>SECOMPP</p>
-                    <p className={styles.mainNameNumbers}>25</p>
+                    <Image className={""} src='/logoSecompp25.png' alt="Logo Secompp 25" width={500} height={100}/>
                 </div>
 
                 <div className={styles.subCenter}>
@@ -69,7 +68,7 @@ export default function Presentation() {
                 </div>
 
                 <div className={styles.dateContainer}>
-                    <p>de 29/9 a 03/10</p>
+                    <p>de 29/09 a 03/10</p>
                 </div>
 
                 <button className={styles.btnInscreva}>Inscreva-se</button>
