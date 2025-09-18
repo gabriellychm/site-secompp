@@ -7,7 +7,7 @@ export default function MinicursosPage() {
     <Suspense fallback={<div>Carregando minicursos...</div>}>
       <SectionEvento
         pageTitle="MINICURSOS"
-        dayOfWeek="Quinta-feira"
+        dayOfWeek="Cronograma"
         eventos={minicursos}
         headerBgColor="#0e1226"
         headerTextColor="#FFFFFF"

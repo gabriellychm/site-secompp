@@ -71,7 +71,7 @@ export default function Presentation() {
                     <p>de 29/09 a 03/10</p>
                 </div>
 
-                <button className={styles.btnInscreva}><a href="https://forms.gle/Di11YZqFx3HFtHbw6">Inscreva-se</a></button>
+                <button className={styles.btnInscreva}><a target='_blank' href="https://forms.gle/Di11YZqFx3HFtHbw6">Inscreva-se</a></button>
 
             </div>
 

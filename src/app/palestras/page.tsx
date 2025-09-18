@@ -8,7 +8,7 @@ export default function PalestrasPage() {
     <Suspense fallback={<div>Carregando palestras...</div>}>
       <SectionEvento
         pageTitle="PALESTRAS"
-        dayOfWeek="Sexta-feira"
+        dayOfWeek="Cronograma"
         eventos={palestras}
         headerBgColor="#fcfcff"
         headerTextColor="#0e1526"
