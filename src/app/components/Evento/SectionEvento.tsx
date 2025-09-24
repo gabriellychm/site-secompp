@@ -114,7 +114,7 @@ export default function SectionEvento({
                 >
                   <div className="bg-gray-500/50 rounded-lg flex flex-col items-center justify-center w-full max-w-70 h-40 mx-auto sm:h-56 lg:h-[17.5rem]">
                     <span className="font-bold text-white text-sm text-center">
-                      IMAGEM DO {pageTitle.slice(0, -1)}
+                      <img src={evento.imagemUrl} alt={evento.title}/>
                     </span>
                   </div>
                 </SwiperSlide>

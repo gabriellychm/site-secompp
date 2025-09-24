@@ -31,7 +31,7 @@ export const minicursos: Evento[] = [
         preRequisito: "Não há pré-requisitos",
         descricao: "---",
         contato: "p.santos-junior@unesp.br",
-        imagemUrl: "/images/minicursos/placeholder.png",
+        imagemUrl: "/minicursos/hardwere.jpeg",
     },
     {
         title: "Construção de uma Pokedex com a POKEAPI",
@@ -41,17 +41,17 @@ export const minicursos: Evento[] = [
         preRequisito: "Não há pré-requisitos",
         descricao: "---",
         contato: "",
-        imagemUrl: "/images/minicursos/placeholder.png",
+        imagemUrl: "/minicursos/pokeapi.jpeg",
     },
     {
         title: "A Cibersegurança para Iniciantes com Capture The Flag (CTF)",
         horario: "Segunda-feira 14:00-18:00",
-        ministrante: "Matheus Chiosini Pscheidt | Lucas César Freitas | ",
+        ministrante: "Matheus Chiosini Pscheidt | Paulo Celso dos Santos Júnior",
         local: "Sala 6B",
         preRequisito: "Não há pré-requisitos",
         descricao: "---",
         contato: "lucascesarfreitas@gmail.com",
-        imagemUrl: "/images/minicursos/placeholder.png",
+        imagemUrl: "/minicursos/flag.jpeg",
     },
     {
         title: "Introdução à linguagem Python",
@@ -61,7 +61,7 @@ export const minicursos: Evento[] = [
         preRequisito: "Não há pré-requisitos",
         descricao: "---",
         contato: "enzonracciatti@gmail.com",
-        imagemUrl: "/images/minicursos/placeholder.png",
+        imagemUrl: "/minicursos/python.png",
     },
     {
         title: "Programação orientada a gambiarra: o que (não) fazer",
@@ -71,7 +71,7 @@ export const minicursos: Evento[] = [
         preRequisito: "Não há pré-requisitos",
         descricao: "---",
         contato: "nahksalies@gmail.com",
-        imagemUrl: "/images/minicursos/placeholder.png",
+        imagemUrl: "/minicursos/gambiarra.jpeg",
     },
     {
         title: "Python para análise de dados",
@@ -81,7 +81,7 @@ export const minicursos: Evento[] = [
         preRequisito: "Não há pré-requisitos",
         descricao: "---",
         contato: "bruno.furquim@unesp.br",
-        imagemUrl: "/images/minicursos/placeholder.png",
+        imagemUrl: "/minicursos/pythonAnaliseDados.jpeg",
     },
     {
       title: "FIGMA",
@@ -91,7 +91,7 @@ export const minicursos: Evento[] = [
       preRequisito: "Não há pré-requisitos",
       descricao: "---",
       contato: "sabrina@ejcomp.com.br",
-      imagemUrl: "/images/minicursos/placeholder.png",
+        imagemUrl: "/minicursos/figma.jpeg",
     },
     {
         title: "Introdução a redes de computadores",
@@ -101,7 +101,7 @@ export const minicursos: Evento[] = [
         preRequisito: "Não há pré-requisitos",
         descricao: "---",
         contato: "lucas.gregorio@unesp.br",
-        imagemUrl: "/images/minicursos/placeholder.png",
+        imagemUrl: "/minicursos/redes.jpeg",
     },
     {
         title: "Protocolos da camada de transporte, com foco em TCP e UDP",
@@ -111,7 +111,7 @@ export const minicursos: Evento[] = [
         preRequisito: "Não há pré-requisitos",
         descricao: "---",
         contato: "jose.yamaoki@unesp.br",
-        imagemUrl: "/images/minicursos/placeholder.png",
+        imagemUrl: "/minicursos/tcp.jpeg",
     },
     {
         title: "Documentação e Produtividade com Markdown (Usando Obsidian e GitHub)",
@@ -121,17 +121,17 @@ export const minicursos: Evento[] = [
         preRequisito: "Noções Básicas de GitHub",
         descricao: "---",
         contato: "abigailsayury.nakashima@gmail.com",
-        imagemUrl: "/images/minicursos/placeholder.png",
+        imagemUrl: "/minicursos/git.png",
     },
     {
         title: "Conceitos de Machine Learning na classificação e regressão",
         horario: "Quarta-feira 14:00-18:00",
-        ministrante: "Pedro Henrique Milani Vagula",
+        ministrante: "Pedro Henrique Milani Vagula | Matheus de Almeida Viríssimo",
         local: "Sala 06",
         preRequisito: "Não há pré-requisitos",
         descricao: "---",
         contato: "phm.vagula@unesp.br",
-        imagemUrl: "/images/minicursos/placeholder.png",
+        imagemUrl: "/minicursos/MachineLearning.jpeg",
     },
     {
         title: "Desenvolvimento de uma API em Express",
@@ -141,27 +141,27 @@ export const minicursos: Evento[] = [
         preRequisito: "Não há pré-requisitos",
         descricao: "---",
         contato: "leonardo.coradeli@unesp.br",
-        imagemUrl: "/images/minicursos/placeholder.png",
+        imagemUrl: "/minicursos/express.jpeg",
     },
     {
         title: "Introdução a Visão Computacional com Redes Neurais",
         horario: "Quarta-feira 14:00-18:00",
-        ministrante: "Rennan Furlaneto Collado | Enzo Racciatti | Daniel Henrique Peres Servejeira",
+        ministrante: "Rennan Furlaneto Collado | Enzo Racciatti | Daniel Henrique Peres Servejeira | Pedro Alonso Oliveira",
         local: "Sala LDC2",
         preRequisito: "Não há pré-requisitos",
         descricao: "---",
         contato: "rennan.collado@unesp.br",
-        imagemUrl: "/images/minicursos/placeholder.png",
+        imagemUrl: "/minicursos/visaoComputacional.jpeg",
     },
     {
         title: "Pentest, práticas e conceitos de testes de penetração",
         horario: "Quinta-feira 14:00-18:00",
-        ministrante: "Henrique Dantas Quintana  | Thiago das Chagas Batista | Fernando Kendi Salesi",
+        ministrante: "Henrique Dantas Quintana  | Thiago das Chagas Batista | Fernando Kendi Salesi | Gerson Lucas Souza Carvalho",
         local: "Sala 06",
         preRequisito: "Não há pré-requisitos",
         descricao: "---",
         contato: "thiago.batista@unesp.br",
-        imagemUrl: "/images/minicursos/placeholder.png",
+        imagemUrl: "/minicursos/pentest.jpeg",
     },
     {
         title: "Api REST com Java Spring",
@@ -171,17 +171,17 @@ export const minicursos: Evento[] = [
         preRequisito: "Não há pré-requisitos",
         descricao: "---",
         contato: "augusto.macedo@unesp.br",
-        imagemUrl: "/images/minicursos/placeholder.png",
+        imagemUrl: "/minicursos/javaSpring.jpeg",
     },
     {
       title: "O maior inimigo da cibersegurança: A engenharia social",
       horario: "Sexta-feira 08:00-12:00",
-      ministrante: " | Matheus Chiosini Pscheidt",
+      ministrante: "Lucas César Freitas | Matheus Chiosini Pscheidt",
       local: "Sala 5B",
       preRequisito: "Não há pré-requisitos",
       descricao: "---",
       contato: "matheus.pscheidt@unesp.br",
-      imagemUrl: "/images/minicursos/placeholder.png",
+        imagemUrl: "/minicursos/engSocial.jpeg",
     },
     {
         title: "Capacitação Impressora 3D",
@@ -216,7 +216,7 @@ export const palestras: Evento[] = [
     descricao:
       "Muito além do hype, esta palestra apresenta de forma clara e acessível o que é trabalhar com Data Science e Inteligência Artificial.",
     contato: "---",
-    imagemUrl: "/images/palestras/ia.png",
+    imagemUrl: "/palestras/palestraCaio.png",
   },
   {
     title: "Mesa Redonda",
@@ -238,7 +238,7 @@ export const palestras: Evento[] = [
     descricao:
       "Nesta palestra, será apresentado caminhos para desenvolver IA em saúde de forma inclusiva, segura e justa para todos.",
     contato: "---",
-    imagemUrl: "/images/palestras/seguranca.png",
+    imagemUrl: "/palestras/palestraRaissa.png",
   },
   {
     title: "Aspectos Essenciais para a Eficiência no Desenvolvimento de Software",
@@ -249,7 +249,7 @@ export const palestras: Evento[] = [
     descricao:
       "Serão apresentadas práticas para aumentar a eficiência e a qualidade de entregas, incluindo planejamento colaborativo, comunicação eficaz, uso de IA e aprendizados de projetos internacionais.",
     contato: "---",
-    imagemUrl: "/images/palestras/seguranca.png",
+    imagemUrl: "/palestras/palestraJoya.png",
   },
 
 ];
