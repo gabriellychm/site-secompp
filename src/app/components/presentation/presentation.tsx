@@ -13,7 +13,6 @@ export default function Presentation() {
         <div className={styles.container}>
             <header className={styles.header}>
                 <div className={styles.logoSection}>
-                    <div className={styles.logoCircle}></div>
                     <div className={styles.siteName}>SECOMPP25</div>
                 </div>
 

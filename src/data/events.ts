@@ -96,7 +96,7 @@ export const minicursos: Evento[] = [
     {
         title: "Introdução a redes de computadores",
         horario: "Terça-feira 14:00-18:00 | Quarta-feira 14:00-18:00",
-        ministrante: "Nathan Alves Da Cruz Silveira  | Lucas Henrique Gregorio",
+        ministrante: "Nicolas Fernando da Silva | Lucas Henrique Gregorio",
         local: "Sala 5B",
         preRequisito: "Não há pré-requisitos",
         descricao: "---",

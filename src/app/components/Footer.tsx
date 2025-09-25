@@ -1,67 +1,22 @@
 export default function Footer() {
     return(
         <div className="bg-[#0E1526] p-5 grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-4">
-            <div className="lg:col-span-3 grid sm:grid-cols-3 text-white items-center gap-4 m-3">
+            <div className="lg:col-span-3 grid sm:grid-cols-2 text-white items-center gap-4 m-3">
                 <div className="flex flex-col items-center">
                     <p className="font-bold text-lg">Patrocínio</p>
-                    <div className="flex flex-col items-start gap-3">
+                    <div className="flex flex-col items-center gap-3">
                         <div className="flex items-center gap-3">
-                            <div className="p-5 bg-gray-500 rounded-full">
-                            </div>
-                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="">@Patrocinador</a>
-                        </div>
-                        <div className="flex items-center gap-3">
-                            <div className="p-5 bg-gray-500 rounded-full">
-                            </div>
-                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="">@Patrocinador</a>
-                        </div>
-                        <div className="flex items-center gap-3">
-                            <div className="p-5 bg-gray-500 rounded-full">
-                            </div>
-                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="">@Patrocinador</a>
+                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="https://vericode.com.br/">Vericode</a>
                         </div>
                     </div>
                 </div>
                 <div className="flex flex-col items-center">
                     <p className="font-bold text-lg">Realização</p>
-                    <div className="flex flex-col items-start gap-3">
+                    <div className="flex flex-col items-center gap-3">
                         <div className="flex items-center gap-3">
-                            <div className="p-5 bg-gray-500 rounded-full">
-                            </div>
-                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="">@Patrocinador</a>
-                        </div>
-                        <div className="flex items-center gap-3">
-                            <div className="p-5 bg-gray-500 rounded-full">
-                            </div>
-                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="">@Patrocinador</a>
-                        </div>
-                        <div className="flex items-center gap-3">
-                            <div className="p-5 bg-gray-500 rounded-full">
-                            </div>
-                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="">@Patrocinador</a>
+                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="https://www.alimentoswilson.com.br/marca/refresco-wilson.html">Refresco Wilson</a>
                         </div>
                     </div>
-                </div>
-                <div className="flex flex-col items-center">
-                    <p className="font-bold text-lg">Apoio</p>
-                    <div className="flex flex-col items-start gap-3">
-                        <div className="flex items-center gap-3">
-                            <div className="p-5 bg-gray-500 rounded-full">
-                            </div>
-                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="">@Patrocinador</a>
-                        </div>
-                        <div className="flex items-center gap-3">
-                            <div className="p-5 bg-gray-500 rounded-full">
-                            </div>
-                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="">@Patrocinador</a>
-                        </div>
-                        <div className="flex items-center gap-3">
-                            <div className="p-5 bg-gray-500 rounded-full">
-                            </div>
-                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="">@Patrocinador</a>
-                        </div>
-                    </div>
-
                 </div>
             </div>
             <div className="bg-[#D9D9D922] rounded-4xl grid grid-rows-2 justify-center lg:flex lg:flex-col">
