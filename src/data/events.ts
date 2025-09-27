@@ -219,6 +219,17 @@ export const palestras: Evento[] = [
     imagemUrl: "/palestras/palestraCaio.png",
   },
   {
+    title: "Como se destacar no mercado de trabalho",
+    horario: "Terça-feira 19:30",
+    ministrante: "Isabella Galante",
+    preRequisito: "Não há pré-requisitos",
+    local: "Auditório",
+    descricao:
+      "Quer saber como se destacar no mercado de trabalho? Aprenda com quem vive isso na prática! A Isabella Galante, Gerente de Vendas na Ambev, vai compartilhar a jornada dela na empresa e dar dicas valiosas para você brilhar em qualquer processo seletivo.",
+    contato: "---",
+    imagemUrl: "/palestras/palestraAmbev.png",
+  },
+  {
     title: "Mesa Redonda",
     horario: "Terça-feira 19:30",
     ministrante: "A definir",
