@@ -232,13 +232,13 @@ export const palestras: Evento[] = [
   {
     title: "Mesa Redonda",
     horario: "Terça-feira 19:30",
-    ministrante: "A definir",
+    ministrante: "Jéssica Galindo | André Andreotti | Gustavo Cuter | Susan Lima Feitosa",
     preRequisito: "Não há pré-requisitos",
     local: "Auditório",
     descricao:
-      "Profissionais que se destacam na área se reunirão para compartilhar seus trabalhos e experiências, celebrando a inovação e discutindo as últimas tendências em tecnologia.",
+    "Participe da Mesa-Redonda do SECOMPP, um momento especial que reunirá três ex-alunos  que hoje se destacam no mercado de tecnologia: Jéssica Galindo, André Andreotti, Gustavo Cuter e Susan Lima Feitosa. Eles compartilharão suas trajetórias profissionais, experiências e desafios, mostrando como a formação foi fundamental para suas conquistas.",
     contato: "---",
-    imagemUrl: "/images/palestras/quantica.png",
+    imagemUrl: "/palestras/mesaRedonda.png",
   },
   {
     title: "Democratizando IA para saúde de forma segura, robusta e justa",
