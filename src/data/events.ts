@@ -54,6 +54,16 @@ export const minicursos: Evento[] = [
         imagemUrl: "/minicursos/flag.jpeg",
     },
     {
+        title: "LaTex",
+        horario: "Segunda-feira 14:00-18:00",
+        ministrante: "Rogério Eduardo Garcia",
+        local: "Sala 10",
+        preRequisito: "Não há pré-requisitos",
+        descricao: "---",
+        contato: "rogerio.garcia@unesp.br",
+        imagemUrl: "/minicursos/Latez.jpeg",
+    },
+    {
         title: "Introdução à linguagem Python",
         horario: "Terça-feira 08:00-12:00",
         ministrante: "Kelly Kimura | Enzo Racciatti",
@@ -231,7 +241,7 @@ export const palestras: Evento[] = [
   },
   {
     title: "Mesa Redonda",
-    horario: "Terça-feira 19:30",
+    horario: "Terça-feira 20:30",
     ministrante: "Jéssica Galindo | André Andreotti | Gustavo Cuter | Susan Lima Feitosa",
     preRequisito: "Não há pré-requisitos",
     local: "Auditório",
