@@ -13,6 +13,10 @@ export default function Footer() {
                             <img src="wilson.jpg" alt="Logo Wilson Alimentos" className="rounded-full size-10"/>
                             <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="https://www.alimentoswilson.com.br/">Alimentos Wilson</a>
                         </div>
+                        <div className="flex items-center gap-3">
+                            <img src="logo-cobmais-branco.svg" alt="Logo Cobmais" className="rounded-full size-10"/>
+                            <a className={"hover:text-[#FFB300] hover:underline underline-offset-5 transition"} href="https://www.cobmais.com.br/">Cobmais</a>
+                        </div>
                     </div>
                 </div>
                 <div className="flex flex-col items-center">
